@@ -98,4 +98,5 @@ source $ZSH/oh-my-zsh.sh
 # JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk
 # SCALA_HOME=/usr/local/Cellar/scala/2.12.7
 # PATH=$JAVA_HOME/bin:$SCALA_HOME/bin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
