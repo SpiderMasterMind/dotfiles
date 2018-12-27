@@ -15,7 +15,7 @@ vim-ruby is a TBC
 **FZF**
 
 brew install fzf
-
 **and**
-
 git clone fzf.vim into `~/.vim/bundle`
+
+Also needs `brew install the_silver_searcher`
