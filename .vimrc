@@ -20,6 +20,8 @@ set cursorline
 set hlsearch
 set incsearch
 set wildmenu
+
+set rtp+=/usr/local/opt/fzf
 colorscheme vividchalk
 
 set expandtab

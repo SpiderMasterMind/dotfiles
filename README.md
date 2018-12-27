@@ -11,3 +11,11 @@ Although `.vim/bundle/` already exists, plugins should be installed manually (as
 - vim-vinegar
 
 vim-ruby is a TBC
+
+**FZF**
+
+brew install fzf
+
+**and**
+
+git clone fzf.vim into `~/.vim/bundle`
