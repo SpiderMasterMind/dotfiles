@@ -6,7 +6,11 @@ syntax on
 
 autocmd StdinReadPre * let s:std_in=1
 
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 autocmd Bufread,BufNewFile *.hbs set filetype=html
+
+map <C-n> :NERDTreeToggle<CR>
 
 imap aa <esc>
 set tabstop=2
@@ -19,9 +23,12 @@ set number
 set cursorline
 set hlsearch
 set incsearch
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
 set wildmenu
 colorscheme vividchalk
 
 set expandtab
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 nmap ; :
