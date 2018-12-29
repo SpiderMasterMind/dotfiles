@@ -22,8 +22,18 @@ set incsearch
 set wildmenu
 
 set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
+nmap ; :
+nmap <Leader>b :Buffers<CR>
+nmap <Leader>r :Ack!<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>f :Ag!<CR>
+nmap <Leader>h :History<CR>
+
 colorscheme vividchalk
 
 set expandtab
 
-nmap ; :
+
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
