@@ -8,9 +8,13 @@ autocmd StdinReadPre * let s:std_in=1
 
 autocmd Bufread,BufNewFile *.hbs set filetype=html
 
+let mapleader = "`"
 imap aa <esc>
-set tabstop=2
+nmap <Leader><CR> O<Esc>
+nmap <CR> o<Esc>
+nmap ; :
 
+set tabstop=2
 set clipboard=unnamed
 
 set autoindent
@@ -23,17 +27,19 @@ set wildmenu
 
 set rtp+=/usr/local/opt/fzf
 set rtp+=~/.fzf
-nmap ; :
 nmap <Leader>b :Buffers<CR>
-nmap <Leader>r :Ack!<CR>
+nmap <Leader>r :Ack<CR>
 nmap <Leader>t :Files<CR>
-nmap <Leader>f :Ag!<CR>
+nmap <Leader>f :Ag<CR>
 nmap <Leader>h :History<CR>
 
 colorscheme vividchalk
 
 set expandtab
 
-
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+" Ag fzf preview window
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>,
+  \                 <bang>0 ? fzf#vim#with_preview('up:60%')
+  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \                 <bang>0)
