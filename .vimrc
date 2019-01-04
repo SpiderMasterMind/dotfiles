@@ -25,6 +25,14 @@ set hlsearch
 set incsearch
 set wildmenu
 
+" ctag jumping stuff
+" project: ctags -R .
+" project gems: ctags --exclude=.git --exclude='*.log' -R * `bundle show --paths`
+set tags+=gems.tags
+set autochdir
+set tags+=./tags;
+
+
 set rtp+=/usr/local/opt/fzf
 set rtp+=~/.fzf
 nmap <Leader>b :Buffers<CR>

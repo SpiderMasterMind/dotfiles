@@ -95,6 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# makes system use homebrew's ctags
+alias ctags="`brew --prefix`/bin/ctags"
+
 JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk
 SCALA_HOME=/usr/local/Cellar/scala/2.12.7
 PATH=$JAVA_HOME/bin:$SCALA_HOME/bin:$PATH

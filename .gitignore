@@ -5,3 +5,6 @@
 .log/
 .Trashes
 **/rubocop.yml
+tags
+gems.tags
+
