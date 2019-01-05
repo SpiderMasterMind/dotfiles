@@ -29,7 +29,7 @@ set wildmenu
 " project: ctags -R .
 " project gems: ctags --exclude=.git --exclude='*.log' -R * `bundle show --paths`
 set tags+=gems.tags
-set autochdir
+" set autochdir
 set tags+=./tags;
 
 
@@ -40,6 +40,7 @@ nmap <Leader>r :Ack<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>f :Ag<CR>
 nmap <Leader>h :History<CR>
+nmap <Leader>l :Lines<CR>
 
 colorscheme vividchalk
 
