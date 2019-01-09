@@ -37,8 +37,8 @@ set rtp+=/usr/local/opt/fzf
 set rtp+=~/.fzf
 nmap <Leader>b :Buffers<CR>
 nmap <Leader>r :Ack<CR>
-nmap <Leader>t :Files<CR>
-nmap <Leader>f :Ag<CR>
+nmap <Leader>f :Files<CR>
+nmap <Leader>t :Ag<CR>
 nmap <Leader>h :History<CR>
 nmap <Leader>l :Lines<CR>
 
