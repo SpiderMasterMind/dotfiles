@@ -7,4 +7,7 @@
 **/rubocop.yml
 tags
 gems.tags
+[alias]
+  co = checkout
+  br = branch
 

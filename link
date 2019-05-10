@@ -5,4 +5,3 @@ ln -nfs ./dotfiles/.vim ~/.vim
 ln -nfs ./dotfiles/.bash_profile ~/.bash_profile
 ln -nfs ./dotfiles/.gitignore ~/.gitignore
 ln -nfs ./dotfiles/.zshrc ~/.zshrc
-ln -nfs ./dotfiles/.ideavimrc ~/.ideavimrc

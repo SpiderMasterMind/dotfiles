@@ -8,7 +8,9 @@ autocmd StdinReadPre * let s:std_in=1
 
 autocmd Bufread,BufNewFile *.hbs set filetype=html
 
-let mapleader = "`"
+let g:loaded_matchparen=1
+
+let mapleader = "§"
 imap aa <esc>
 nmap <Leader><CR> O<Esc>
 nmap <CR> o<Esc>
@@ -31,7 +33,6 @@ set wildmenu
 set tags+=gems.tags
 " set autochdir
 set tags+=./tags;
-
 
 set rtp+=/usr/local/opt/fzf
 set rtp+=~/.fzf
