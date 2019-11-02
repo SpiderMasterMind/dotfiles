@@ -1,12 +1,6 @@
-let mapleader = "§"
-imap aa <esc>
-nmap <Leader><CR> O<Esc>
-nmap <CR> o<Esc>
-nmap ; :
-
+set noshowmode " Don't show the mode
 set tabstop=2
 set clipboard=unnamed
-
 set autoindent
 set shiftwidth=2
 set number
@@ -15,18 +9,42 @@ set hlsearch
 set incsearch
 set wildmenu
 
-" ctag jumping stuff
-" project: ctags -R .
-" project gems: ctags --exclude=.git --exclude='*.log' -R * `bundle show --paths`
-set tags+=gems.tags
-" set autochdir
-set tags+=./tags;
+" Disable hover over tips
+if exists('+ballooneval')
+  " This doesn't seem to stop tooltips for Ruby files
+  set noballooneval
+  " 100 second delay seems to be the only way to disable the tooltips
+  set balloondelay=100000
+endif
 
-set expandtab
+" Highlight search
+set hlsearch
+" show matching brackets
+set showmatch
+" Yank entire buffer
+nnoremap gy :0,$ y<cr>
+" select entire buffer
+nnoremap vy ggVG
+nnoremap Y y$
 
-" Ag fzf preview window
-command! -bang -nargs=* Ag
-  \ call fzf#vim#ag(<q-args>,
-  \                 <bang>0 ? fzf#vim#with_preview('up:60%')
-  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
-  \                 <bang>0)
+" Beginning and end of lines is easier
+noremap H ^
+noremap L $
+
+" remap U to <C-r> for easier redo
+nnoremap U <C-r>
+
+
+imap aa <esc>
+
+" Insert mode at line above
+nmap <Leader><CR> O<Esc>
+
+" Insert mode at line below
+nmap <CR> o<Esc>
+
+" Command mode alternative
+nmap ; :
+
+let mapleader = "§"
+
