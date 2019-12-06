@@ -8,6 +8,10 @@ set cursorline
 set hlsearch
 set incsearch
 set wildmenu
+" https://github.com/JetBrains/ideavim
+set surround
+set easymotion
+set commentary
 
 " Disable hover over tips
 if exists('+ballooneval')
