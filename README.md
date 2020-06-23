@@ -6,9 +6,9 @@ Although `.vim/bundle/` already exists, plugins should be installed manually (as
 
 - commentary
 - vim-vinegar
-- vim-rais
+- vim-rails
 - vim-airline (`:help airline`)
-- vim-vinegar
+-vim-rooter
 
 vim-ruby is a TBC
 

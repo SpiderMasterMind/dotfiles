@@ -10,7 +10,7 @@ autocmd Bufread,BufNewFile *.hbs set filetype=html
 
 let g:loaded_matchparen=1
 
-let mapleader = "§"
+let mapleader = "`"
 imap aa <esc>
 nmap <Leader><CR> O<Esc>
 nmap <CR> o<Esc>

@@ -26,6 +26,8 @@ set hlsearch
 " show matching brackets
 set showmatch
 " Yank entire buffer
+" enable vim surround emulation
+set surround
 nnoremap gy :0,$ y<cr>
 " select entire buffer
 nnoremap vy ggVG
